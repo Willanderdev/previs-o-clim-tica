@@ -31,7 +31,6 @@ def fivedias(codigolocal):
                             indice_da_semana = data.weekday()
 
                             if repete == 0:
-
                                    cabeçalho = "Previsao Climatica"
                                    print(cabeçalho.center(60, ' '))
                                    DIAS[indice_da_semana] = "Hoje"

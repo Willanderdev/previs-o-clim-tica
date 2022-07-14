@@ -32,7 +32,7 @@ def fivedias(codigolocal):
 
                             if repete == 0:
                                    cabeçalho = "Previsao Climatica"
-                                   print(cabeçalho.center(60, ' '))
+                                   print(cabeçalho.center(60, '*'))
                                    DIAS[indice_da_semana] = "Hoje"
                                    dia_da_semana = DIAS[indice_da_semana]
                                    print('')   

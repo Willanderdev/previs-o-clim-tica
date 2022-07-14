@@ -4,7 +4,6 @@ import json
 accuweatherapikey = 'kGnMMlfUARcaZRgLqnErqP7HQlKziod6'
 codigolocal = '44127'
 def fivedias(codigolocal):
-
        CurrentConditionsapiurl = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + codigolocal +"?apikey="+accuweatherapikey +"&language=pt-br&metric=true"
        r = requests.get(CurrentConditionsapiurl)
        if (r.status_code!=200):
@@ -33,7 +32,8 @@ def fivedias(codigolocal):
 
                             if repete == 0:
 
-                                   print("                        Previsao Climatica ")
+                                   cabeçalho = "Previsao Climatica"
+                                   print(cabeçalho.center(60, ' '))
                                    DIAS[indice_da_semana] = "Hoje"
                                    dia_da_semana = DIAS[indice_da_semana]
                                    print('')   
